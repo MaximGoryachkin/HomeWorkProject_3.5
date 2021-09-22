@@ -14,7 +14,7 @@ struct ContactsView: View {
         NavigationView {
             List(contacts) { contact in
                 NavigationLink(contact.fullName,
-                               destination: ContactDetailsView(contact: contact))
+                               destination: DetailsView(contact: contact))
             }
             .navigationTitle("Contact List")
         }
