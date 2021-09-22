@@ -11,16 +11,17 @@ struct ContactDetailsView: View {
     let contact: Contact
     
     var body: some View {
-        VStack {
-            List {
-                Image(systemName: contact.image)
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                DetailRow(content: contact.phoneNumber, logo: Logo.phone.rawValue)
-                DetailRow(content: contact.eMail, logo: Logo.tray.rawValue)
-            }
-            .navigationTitle(contact.fullName)
+        List {
+            Image(systemName: contact.image)
+                .resizable()
+                .frame(width: 120, height: 120)
+                .cornerRadius(15)
+                .padding(.leading, 80)
+            DetailRow(content: contact.phoneNumber, logo: Logo.phone.rawValue)
+            DetailRow(content: contact.eMail, logo: Logo.tray.rawValue)
         }
+        .navigationTitle(contact.fullName)
+        .listStyle(GroupedListStyle())
     }
 }
 

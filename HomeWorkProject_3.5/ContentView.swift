@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let contacts = Contact.getContacts()
     
     var body: some View {
         TabView {
-            ContactsView()
+            ContactsView(contacts: contacts)
                 .tabItem {
-                    Image(systemName: Logo.personsLogo.rawValue)
+                    Image(systemName: Logo.persons.rawValue)
                     Text("Contacts")
                 }
-            NumbersView()
+            NumbersView(contacts: contacts)
                 .tabItem {
                     Image(systemName: Logo.phone.rawValue)
                     Text("Numbers")
