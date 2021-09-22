@@ -13,7 +13,7 @@ struct NumbersView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(contacts) {contact in
+                ForEach(contacts) { contact in
                     Section(header: Text(contact.fullName)) {
                         DetailRow(content: contact.phoneNumber,
                                   logo: Logo.phone.rawValue)

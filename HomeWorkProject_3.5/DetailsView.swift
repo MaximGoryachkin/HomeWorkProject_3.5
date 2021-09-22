@@ -13,8 +13,10 @@ struct DetailsView: View {
     var body: some View {
         List {
             ImageView(imageName: contact.image)
-            DetailRow(content: contact.phoneNumber, logo: Logo.phone.rawValue)
-            DetailRow(content: contact.eMail, logo: Logo.tray.rawValue)
+            DetailRow(content: contact.phoneNumber,
+                      logo: Logo.phone.rawValue)
+            DetailRow(content: contact.eMail,
+                      logo: Logo.tray.rawValue)
         }
         .navigationTitle(contact.fullName)
         .listStyle(GroupedListStyle())

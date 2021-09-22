@@ -8,11 +8,13 @@
 import Foundation
 
 class DataManager {
-    
     static let shared = DataManager()
     
     var count: Int {
-        min(firstNames.count, lastNames.count, phoneNumbers.count, eMails.count)
+        min(firstNames.count,
+            lastNames.count,
+            phoneNumbers.count,
+            eMails.count)
     }
     
     let firstNames =

@@ -73,11 +73,11 @@
 				B53D0E3526FB67C20062D862 /* ImageView.swift */,
 				B54175F926FAF7A70077F663 /* DetailRow.swift */,
 				B54175F626FAE3840077F663 /* NumbersView.swift */,
+				B54175E726FAE15B0077F663 /* Contact.swift */,
+				B54175EB26FAE1E60077F663 /* DataManager.swift */,
 				B54175DB26FAE1080077F663 /* Assets.xcassets */,
 				B54175E026FAE1080077F663 /* Info.plist */,
 				B54175DD26FAE1080077F663 /* Preview Content */,
-				B54175E726FAE15B0077F663 /* Contact.swift */,
-				B54175EB26FAE1E60077F663 /* DataManager.swift */,
 			);
 			path = HomeWorkProject_3.5;
 			sourceTree = "<group>";
